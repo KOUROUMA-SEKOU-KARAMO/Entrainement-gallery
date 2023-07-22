@@ -1,0 +1,177 @@
+
+#container-popup{
+     background: #000!important;
+}
+
+.main-slider1{
+    // width: 100vw;
+    // height: 100vh;
+    margin: 30px 0;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    background: #eee;
+
+
+     .slider1{
+         
+        width: 800px;
+        height : 500px;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 10px;
+
+
+        .slides1{
+             width: 500%;
+             height: 500px;
+             display: flex;
+             align-items: center;
+             position: relative;
+               input{
+                  
+                    display: none;
+               }
+             #slide1-btn1:checked ~  .first{
+               margin-left: -200px;
+           }
+           
+          .slide{
+            width: 20%;
+            transition: 2s ease ;
+            height: 100%;
+
+          
+            img{
+                width: 100%;
+                height: 100%;
+                 object-fit: cover;
+                 object-position: center;
+
+            }
+        }
+        
+                    .navigation-manual{
+                         width: 800px;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         position : absolute;
+                         bottom: 30px;
+                         // height: 30px;
+                         left: 0;
+                        z-index: 200;
+                          
+                         label{
+                              padding:10px;
+                               border:2px solid white;
+
+                               margin-right: 20px;
+                                border-radius:50%;
+                                cursor: pointer;
+                                transition: 1s;
+                                &:hover{
+                                    background: teal;
+                                }
+                                
+                         }
+                       
+        
+                    }
+
+                  
+    .navigation-auto{
+                        
+     width: 800px;
+
+     position: absolute;
+     bottom: 30px;
+      .navigation-auto-container{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+           .btn{
+                padding:10px;
+                border: 2px solid teal;
+                color: white;
+                margin-right: 20px;
+                border-radius: 50%;
+                transition: 1s;             
+           }
+      }
+          
+}
+
+   .navigation-auto, .navigation-manual{
+    // background: #000;
+       @media screen and (max-width: 580px) {
+           width: 500px;
+       }
+       @media screen and (max-width: 380px) {
+           width: 300px;
+       }
+   }
+                         // Checked Manual  
+                        
+                         #slide1-btn1{
+
+                            background: teal;
+                               &:checked~.first{ 
+                                   margin-left: 0;
+                                  }
+                         }
+                         #slide1-btn2{
+                               &:checked~.first{ 
+                                   margin-left: -20%;
+                                  }
+                         }
+                         #slide1-btn3{
+                               &:checked~.first{ 
+                                   margin-left: -40%;
+                                  }
+                         }
+                         #slide1-btn4{
+                               &:checked~.first{ 
+                                   margin-left: -60%;
+                                  }
+                         }
+
+                         // Checked Auto   
+                         #slide1-btn1{
+                               &:checked~ .navigation-auto .navigation-auto-container .btn-auto1{ 
+                                 background: teal;
+                                  }
+                         }
+                         #slide1-btn2{
+                               &:checked~ .navigation-auto .navigation-auto-container .btn-auto2{ 
+                                   background: teal;
+                                  }
+                         }
+                         #slide1-btn3{
+                               &:checked~ .navigation-auto .navigation-auto-container .btn-auto3{ 
+                                   background: teal;
+                                  }
+                         }
+                         #slide1-btn4{
+                               &:checked~ .navigation-auto .navigation-auto-container .btn-auto4{ 
+                                   background: teal;
+                                  }
+                         }
+                  
+                      
+
+                   }
+                
+             
+                  
+        }
+
+    
+
+    }
+  
+
+
