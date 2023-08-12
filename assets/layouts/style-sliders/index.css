@@ -532,7 +532,8 @@ body {
   width: 100%;
   max-height: 400px;
   transition: all 2s ease;
-  transform: translateX(-300px);
+  opacity: 0;
+  transform: translateX(-400px);
 }
 .container-popup #section-overcome {
   background: rgba(52, 187, 255, 0.287);
@@ -565,8 +566,9 @@ body {
   border-radius: 20px 80px 30px 80px;
   height: 250px;
   width: 520px;
-  transform: translateX(400px);
-  transition: 2s ease;
+  transform: translateX(450px);
+  transition: 2s all;
+  opacity: 0;
 }
 .container-popup #containerPopup #btnShow {
   border: 2px solid white;
@@ -624,4 +626,19 @@ body {
 .container-popup #containerPopup form button {
   width: 100px;
   height: 50px;
+}
+
+.show-scrollY-img {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+.show-scrollY-popup {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+.hidden-scrollY-popup {
+  transform: translateX(500px) !important;
+  opacity: 0 !important;
 }/*# sourceMappingURL=index.css.map */

@@ -80,8 +80,8 @@ body{
           width: 100%;
          max-height: 400px;
           transition: all 2s ease; 
-          // opacity: 0; 
-          transform: translateX(-300px)
+          opacity: 0; 
+          transform: translateX(-400px)
      
         }
       }
@@ -144,8 +144,9 @@ body{
             border-radius:20px 80px 30px 80px ; 
             height: 250px;
             width: 520px;
-            transform: translateX(400px);
-         transition: 2s ease; 
+            transform: translateX(450px);
+         transition: 2s all  ;
+         opacity: 0 ; 
             #btnShow{
                border: 2px solid white;
                 border-radius: 50%;
@@ -226,3 +227,16 @@ body{
 
 }
 
+
+.show-scrollY-img{
+   transform: translateX(0)!important;
+   opacity: 1!important; 
+}
+.show-scrollY-popup{
+   transform: translateX(0)!important;
+   opacity: 1!important; 
+}
+.hidden-scrollY-popup{
+   transform: translateX(500px)!important;
+   opacity: 0!important; 
+}
