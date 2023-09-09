@@ -1,0 +1,125 @@
+.inscrire{
+    position: relative;
+    .form-inscription{
+        position: absolute;
+   background: #eee;
+   left: -200px;
+   top: 150%;
+   max-width: 400px;
+   min-width: 400px;
+   max-height:max-content ;
+     z-index: 200;
+     padding: 20px 20px 20px 40px ;
+     border-radius: 10px;
+    //  display: none;
+     transition: 1s ease;
+     transform: translateX(400px);
+     opacity: 0;
+     border: 1px solid teal;
+
+
+     form{
+         width: 100%;
+           position: relative;
+            // background: #000;
+            margin-top: 40px;
+            padding-top: 50px;
+           &:before{
+              content: '';
+            position: absolute;
+            background: url('../../imgs/img-icons/man-avatar-icon.jpeg') center/cover;
+             width: 100px;
+             height: 100px;
+            //   background: rgba(37, 221, 221, 0.836);
+              border-radius: 50%;
+             transform: translate(-50%,-50%);
+             left: 50%;
+             top:10px;
+              border: 2px solid teal ; 
+              box-shadow: 1px 1px 10px ;
+           }
+         >div{
+             display: flex;
+             flex-direction: column;
+              
+             label{
+                 font-size: 1.2rem;
+                 margin: 10px 0  5px 0;
+                 color: teal;
+             }
+
+             input{
+                 padding: 7px;
+                  outline: none;
+                   border-radius: 5px;
+                   border: none;
+                   width: 80%;
+             }
+
+            }
+            .container-submit{
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 text-align: center;
+                 margin: 50px 0; 
+                //  width: max-content;
+                input[type="submit"]{
+                    background: teal;
+                    width: max-content;
+                    padding: 10px 30px;
+                    font-size: 1.2rem;
+                    color: white;
+                    transition: .5s ease;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: .5;
+                         transform: scale(1.05);
+                    }
+             }
+            }
+     }
+}
+}
+
+.show-form-inscription{
+     transform: translateX(0)!important;
+     opacity: 1!important;
+
+}
+
+.error>input {
+
+
+     
+    opacity: 1!important;
+     color: red!important; 
+     border : 1px solid red!important; 
+
+}
+.error>span {
+
+    color : red!important;
+    opacity: 1!important;  
+   
+}
+
+ .progressBarRed{
+   width: 40%;
+    background: red;
+    height: 2px ;
+    
+ }
+ .progressBarBlue{
+   width: 70%;
+    background: rgb(64, 178, 178) ;
+    height: 2px ;
+
+ }
+ .progressBarGreen{
+   width: 100%;
+    background: teal ;
+    height: 2px ;
+
+ }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script type="module" defer src="index.js" ></script>
+    <script type="module" defer src="./assets/events/form-inscription.js" ></script>
   </head>
   <body>
     <nav id="navbar">
@@ -36,13 +37,48 @@
             <li><a href="#">About</a></li>
           </ul>
           <ul class="connexion">
+            <li class="inscrire" ><a href="" id="showFormInscription">S'inscrire</a>
+              <div class="form-inscription">
+                  <form action="#">
+                      <div class="container-first-name">
+                         <label for="firstName">First name </label>
+                         <input type="text" name="firstName" id="firstName">
+                         <span></span>
+                      </div>
+                      <div class="container-last-name">
+                         <label for="lastName">Last  name </label>
+                         <input type="text" name="lasttName" id="lastName">
+                         <span></span>
+                      </div>
+                     
+                      <div class="container-email">
+                         <label for="email">Email </label>
+                         <input type="text" name="email" id="email">
+                         <span></span>
+                      </div>
+                      <div class="container-password">
+                         <label for="password">Password  </label>
+                         <input type="password" name="password" id="password">
+                         <p></p>
+                         <span></span>
+                      </div>
+                      <div class="container-confirmPassword">
+                         <label for="confirmPassword">Password  </label>
+                         <input type="password" name="confirmPassword" id="confirmPassword">
+                         <span></span>
+                      </div>
+                        <div class="container-submit"> 
+                            <input type="submit" value="S'inscrire">
+                        </div>
+                  </form>
+              </div>
+            </li>
             <li class="login"><a href="">Se connecter</a></li>
-            <li class="inscrire"><a href="">S'inscrire</a></li>
           </ul>
         </div>
         <ul class="connexion2">
-          <li class="login"><a href="">Se connecter</a></li>
           <li class="inscrire"><a href="">S'inscrire</a></li>
+          <li class="login"><a href="">Se connecter</a></li>
           <li class="show-nav">
             <a href=""><i class="fa-solid fa-bars"></i></a>
           </li>
