@@ -8,7 +8,7 @@
    max-width: 400px;
    min-width: 400px;
    max-height:max-content ;
-     z-index: 200;
+     z-index: 3000;
      padding: 20px 20px 20px 40px ;
      border-radius: 10px;
     //  display: none;
@@ -16,7 +16,6 @@
      transform: translateX(400px);
      opacity: 0;
      border: 1px solid teal;
-
 
      form{
          width: 100%;
@@ -109,17 +108,25 @@
    width: 40%;
     background: red;
     height: 2px ;
-    
+    margin-top:10px;
  }
  .progressBarBlue{
-   width: 70%;
-    background: rgb(64, 178, 178) ;
+   width: 60%;
+    background: rgba(94, 167, 167, 0.886) ;
     height: 2px ;
-
+    margin-top:10px;
  }
  .progressBarGreen{
-   width: 100%;
+   width: 80%;
     background: teal ;
     height: 2px ;
-
+    margin:10px 0;
  }
+
+//  #progressBar{
+//     width: 80%; 
+//     height: 2px;
+//     margin:10px auto;
+//     position:relative;
+//     left: -30px;
+//  }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../layouts/styles/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="../events/testMachine.js" defer ></script>
+    <script src="../events/todoList.js" defer ></script>
   </head>
   <body>
     <nav>
@@ -30,7 +30,10 @@
                    <li><a href="../pages/generator.html">generateur bille</a></li>
                    <li><a href="./scrollPopup.html">Sroll Popup</a></li>
                    <li><a href="./testAnime.html">Test Machine</a></li>
-                   <li><a href="./todoList.html">Test Machine</a></li>
+                   <li><a href="./todoList.html">Todo list</a></li>
+
+                   <li><a href="#">Free Videos</a></li>
+                   <li><a href="#">Pexels Blog</a></li>
               </ul>
             </li>
             <li><a href="#">About</a></li>
@@ -49,8 +52,24 @@
         </ul>
       </div>
     </nav>
-        <div class="containerTestAnime">
-               <h1>I'am a </h1>
-        </div>
+   
+    <div class="main-todo-list">
+         <div class="container-todolist">
+             <h1>Todo list </h1>
+             <div class="todo-Form">
+                  <form action="#">
+                     <div class="container-input"> 
+                        <input type="text" name="todoList" id="todoList">
+                         <button class="btn-todoList"><input type="submit" name="valid" id="valid" value="Ajouter"></button>
+                     </div>
+                  </form>
+             </div>
+             <ul class="listTodo">
+                 <li class="list checked">sfjlsjdfljasldfjlasjdflkjasldfjlasjdf 1</li>
+                 <li class="list ">sfjlsjdfljasldfjlasjdflkjasldfjlasjdf 1</li>
+                 <li class="list ">sfjlsjdfljasldsjdflkjasldfjlasjdf 1</li>
+             </ul>
+         </div>
+    </div>
 </body>
 </html>

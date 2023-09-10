@@ -1,0 +1,130 @@
+
+.main-todo-list{
+    width: 100vw;
+  margin: 20px  0  ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    .container-todolist{
+         background: rgb(144, 45, 9);
+         padding: 20px ;
+         border-radius: 10px;
+         max-width: 700px;
+         min-width: 500px;
+
+         h1{
+            text-align: center;
+             margin: 0 0 20px 0;
+             color: white;
+             text-transform: uppercase;
+             font-weight: bold;
+         }
+         form{
+
+            .container-input{
+                 
+                display: flex;           
+                input[type="text"]{
+                flex-grow: 1;           }
+                padding: 7px;
+            }
+
+        
+
+            button{
+                background: none;
+                outline: none;
+                border: none;
+                input{
+                     border: none;
+                     background: teal;
+                      outline: none;
+                      cursor: pointer;
+                      padding: 7px;
+                      border-radius: 0  5px  5px 0;
+                      transition: .8s ease;
+                      color: white;
+                      font-size: 1.2rem;
+                      &:hover{
+
+                         background: rgba(5, 255, 255, 0.911);
+                      }
+                 }
+                
+            }
+         }
+
+
+         ul{
+             padding: 20px 0 0 20px;
+              
+
+            li{
+                 color: white;
+                position: relative;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                margin: 7px 0;
+                 &::before{
+                     position: absolute;
+                      content: '*';
+                      font-size: 2rem;
+                        color: orange;
+                        left: -17px;
+                        top: -4px;                                            
+                 }
+                 &::after{
+                     position: absolute;
+                      content: '(terminer)';
+                    //   font-size: 2rem;
+                        color:teal;
+                        right: 50%; 
+                        opacity:0;
+                      background:white;
+                      padding: 0 8px;
+
+
+                 }
+
+                 &:hover::after{
+                     opacity: 1;
+                 }
+            }
+            
+
+            li.checked{
+                &::before{
+                    position: absolute;
+                     content: "✓";
+                     font-size: 1.5rem;
+                       color: orange;
+                       left: -20px;
+                       top: -4px;                                            
+                } 
+            }
+            li.checked{
+                 text-decoration: line-through;
+                &::after{
+                    position: absolute;
+                     content: '(supprimer)';
+                   //   font-size: 2rem;
+                       color: orange;
+                       right: 50%; 
+                       opacity:0;
+
+                }
+
+                &:hover::after{
+                     opacity:1;
+                     z-index: 200;
+                     color: red;
+                      background:white;
+                      padding: 0 8px;
+
+                }
+            }
+
+         }
+    }
+}
