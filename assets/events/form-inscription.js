@@ -1,5 +1,6 @@
 const showFormInscription=document.querySelector('#showFormInscription');
- const FormInscription=document.querySelector('.form-inscription')
+ const FormInscription=document.querySelector('.form-inscription');
+ const showFormInscription2=document.querySelector('.form-inscription >i');
 const inputs =document.querySelectorAll('.form-inscription form >div input[type="text"], input[type="password"] ')
 const form =document.querySelector('.form-inscription form');
 const submit=document.querySelector('.form-inscription form input[type="submit"]');
@@ -125,6 +126,10 @@ showFormInscription.addEventListener('click',(e)=>{
     e.preventDefault()
   FormInscription.classList.toggle('show-form-inscription')
 })
+showFormInscription2.addEventListener('click',(e)=>{
+    e.preventDefault()
+  FormInscription.classList.toggle('show-form-inscription')
+})
 
 
 
@@ -155,3 +160,6 @@ form.addEventListener('submit',(e)=>{
 // submit.addEventListener('click',(e)=>{
 //   form.reset()
 // })
+
+
+9

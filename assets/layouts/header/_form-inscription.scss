@@ -17,6 +17,18 @@
      opacity: 0;
      border: 1px solid teal;
 
+     .fa-circle-xmark{
+       color: red;
+       font-size: 1.5rem;
+       position: absolute;
+       right: 10px;
+       top: 10px; 
+       cursor: pointer;
+        &:hover{
+           transform: scale(1.05);
+        }
+     }
+
      form{
          width: 100%;
            position: relative;

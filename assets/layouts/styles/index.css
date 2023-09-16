@@ -301,6 +301,17 @@ header .container-header .container-search form button:hover {
   opacity: 0;
   border: 1px solid teal;
 }
+.inscrire .form-inscription .fa-circle-xmark {
+  color: red;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.inscrire .form-inscription .fa-circle-xmark:hover {
+  transform: scale(1.05);
+}
 .inscrire .form-inscription form {
   width: 100%;
   position: relative;
@@ -931,6 +942,46 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.container-compte-rebours {
+  margin: 50px auto;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-compte-rebours h1 {
+  margin: 20px;
+}
+.container-compte-rebours form {
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.container-compte-rebours form input[type=number] {
+  padding: 7px 30px;
+  border: 1px solid teal;
+}
+.container-compte-rebours form input[type=submit] {
+  padding: 9px;
+  background: teal;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  left: -3px;
+  transition: 0.3s ease;
+  border-radius: 0 7px 7px 0;
+  border: none;
+}
+.container-compte-rebours form input[type=submit]:hover {
+  background: rgb(61, 161, 161);
+}
+.container-compte-rebours #displayCountDown {
+  margin-top: 30px;
+  color: teal;
+  font-size: 2rem;
 }
 
 .main-todo-list {

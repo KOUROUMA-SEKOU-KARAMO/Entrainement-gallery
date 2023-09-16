@@ -1,0 +1,40 @@
+.container-compte-rebours{
+    margin: 50px auto   ; 
+    width: 100vw;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1{
+           margin: 20px ;  
+      }
+
+      form{ 
+         max-width: max-content;
+          input[type="number"]{
+                padding: 7px 30px;
+                border:1px solid teal;
+          }
+          input[type="submit"]{
+                padding: 9px ;
+                background: teal;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                left: -3px;
+                transition: .3s ease;
+                border-radius: 0  7px 7px 0 ;
+               border: none;
+                &:hover{
+                     background: rgb(61, 161, 161);
+                }
+          }
+      }
+
+      #displayCountDown{
+           margin-top:30px; 
+           color: teal;
+           font-size: 2rem;
+      }
+}
