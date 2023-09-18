@@ -407,6 +407,69 @@ header .container-header .container-search form button:hover {
   margin: 10px 0;
 }
 
+.form-reservation-holiday {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../imgs/holiday-plage.jpeg") center/cover;
+}
+.form-reservation-holiday .form-reservation {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 30px;
+  background: rgba(238, 238, 238, 0.7098039216);
+  border: 1px solid teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.form-reservation-holiday .form-reservation h1 {
+  color: teal;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0 30px 0;
+}
+.form-reservation-holiday .form-reservation input, .form-reservation-holiday .form-reservation label {
+  display: block;
+}
+.form-reservation-holiday .form-reservation label {
+  color: teal;
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+.form-reservation-holiday .form-reservation input:not(input[type=submit]) {
+  padding: 10px;
+  min-width: 250px;
+  outline: none;
+  border: 1px solid teal;
+  background: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+.form-reservation-holiday .form-reservation #total-price {
+  color: teal;
+  margin: 20px;
+  font-size: 1.6rem;
+}
+.form-reservation-holiday .form-reservation input[type=submit] {
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  background: teal;
+  position: relative;
+  right: -60px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.form-reservation-holiday .form-reservation input[type=submit]:hover {
+  transform: scale(1.06);
+}
+
 #explore {
   position: relative;
 }
