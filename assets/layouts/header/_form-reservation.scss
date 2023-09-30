@@ -43,11 +43,28 @@
          font-size: 1.5rem;
      }
 
-     #total-price{
-         color: teal;
+     #totalPrice{
+         color: teal!important;
           margin: 20px;
         font-size: 1.6rem;
-
+        position: relative;
+        span{
+            position: absolute;
+            color:red;
+        }
+     
+     }
+     #display-price{
+         position: relative;
+         font-size: 1.5rem;
+         &::after{
+             content:"$/nigth";
+             position: absolute;
+             
+         }
+     
+     
+     
      }
 
      input[type="submit"]{

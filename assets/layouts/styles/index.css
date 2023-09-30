@@ -450,10 +450,23 @@ header .container-header .container-search form button:hover {
   border-radius: 5px;
   font-size: 1.5rem;
 }
-.form-reservation-holiday .form-reservation #total-price {
-  color: teal;
+.form-reservation-holiday .form-reservation #totalPrice {
+  color: teal !important;
   margin: 20px;
   font-size: 1.6rem;
+  position: relative;
+}
+.form-reservation-holiday .form-reservation #totalPrice span {
+  position: absolute;
+  color: red;
+}
+.form-reservation-holiday .form-reservation #display-price {
+  position: relative;
+  font-size: 1.5rem;
+}
+.form-reservation-holiday .form-reservation #display-price::after {
+  content: "$/nigth";
+  position: absolute;
 }
 .form-reservation-holiday .form-reservation input[type=submit] {
   padding: 15px 20px;
@@ -1149,4 +1162,112 @@ body {
   color: red;
   background: white;
   padding: 0 8px;
+}
+
+.blablague-container {
+  margin: 50px auto;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  background: teal;
+  min-height: 200px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.blablague-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 10px;
+}
+.blablague-container p {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+.blablague-container .btn {
+  padding: 15px 20px;
+  text-align: center;
+  margin: 20px auto;
+  background: rgb(79, 191, 191);
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+.blablague-container .btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background: rgba(79, 191, 191, 0.646);
+}
+
+.photos {
+  width: 190vw;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photos .photos-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-users {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px;
+}
+.container-users .users {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.container-users .users .card {
+  min-width: 350px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px;
+}
+.container-users .users .card .card-head {
+  height: 150px;
+  border-bottom: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-users .users .card .card-head .bg-header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: url("https://images.unsplash.com/photo-1561078450-5741201decec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80") center/cover;
+}
+.container-users .users .card .card-head .bg-header img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  border-radius: 50%;
+}
+.container-users .users .card .card-body {
+  padding: 10px 20px;
+}
+.container-users .users .card .card-body h2 {
+  margin-top: 20px;
+}
+.container-users .users .card .card-body ul li {
+  line-height: 30px;
 }/*# sourceMappingURL=index.css.map */
