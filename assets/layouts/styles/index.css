@@ -1270,4 +1270,94 @@ body {
 }
 .container-users .users .card .card-body ul li {
   line-height: 30px;
+}
+
+.meal-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 0;
+}
+.meal-container .meals {
+  width: 100%;
+  height: 100%;
+}
+.meal-container .meals .formulaire {
+  min-width: 250px;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: #eee;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 1px 1px 10px;
+  padding: 20px;
+}
+.meal-container .meals .formulaire form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.meal-container .meals .formulaire form label {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: tahoma;
+  color: #484646;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.meal-container .meals .formulaire form input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background: rgba(148, 199, 199, 0.581);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.meal-container .meals #result {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.meal-container .meals #result .card {
+  flex: 1 0 30%;
+  max-width: 250px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px;
+}
+.meal-container .meals #result .card .card-header h2 {
+  color: teal;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.meal-container .meals #result .card .card-header h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.meal-container .meals #result .card .card-header .card-img-top {
+  min-height: 200px;
+  max-height: 300px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.meal-container .meals #result .card .card-header .card-img-top img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.meal-container .meals #result .card .card-body {
+  padding: 20px;
+}
+.meal-container .meals #result .card .card-body li {
+  line-height: 25px;
 }/*# sourceMappingURL=index.css.map */
