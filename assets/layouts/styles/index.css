@@ -1202,18 +1202,73 @@ body {
   background: rgba(79, 191, 191, 0.646);
 }
 
-.photos {
-  width: 190vw;
-  min-height: 100vh;
-  padding: 30px;
+.photos-container {
+  width: 100vw;
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.photos-container .card {
+  flex: 1 0 30%;
+  min-width: 350px;
+  max-width: 450px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px;
+  position: relative;
+}
+.photos-container .card .btn-delete {
+  position: absolute;
+  color: teal;
+  z-index: 200;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px;
+  cursor: pointer;
 }
-.photos .photos-container {
+.photos-container .card .btn-delete:hover {
+  transform: scale(1.05);
+  color: red;
+}
+.photos-container .card .btn-delete:hover:after {
+  content: "delete";
+  left: -50px;
+  position: absolute;
+  background: white;
+  border-radius: 5px;
+  color: red;
+}
+.photos-container .card .card-header {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+.photos-container .card .card-header img {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 10px;
+}
+.photos-container .card .card-body {
+  padding: 0 20px;
+}
+.photos-container .card .card-body h2 {
+  color: teal;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .container-users {
