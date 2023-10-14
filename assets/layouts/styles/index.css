@@ -1327,92 +1327,96 @@ body {
   line-height: 30px;
 }
 
-.meal-container {
-  min-width: 100vw;
+.flag-container {
+  width: 100vw;
   min-height: 100vh;
-  padding: 20px;
-  padding-top: 0;
+  padding: 30px;
 }
-.meal-container .meals {
-  width: 100%;
-  height: 100%;
-}
-.meal-container .meals .formulaire {
+.flag-container .form {
   min-width: 250px;
   max-width: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
-  background: #eee;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 1px 1px 10px;
-  padding: 20px;
+  margin-top: -20px;
 }
-.meal-container .meals .formulaire form {
+.flag-container .form form {
+  width: 100%;
+}
+.flag-container .form form .form-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-.meal-container .meals .formulaire form label {
-  font-size: 1rem;
-  font-weight: bold;
-  font-family: tahoma;
-  color: #484646;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.meal-container .meals .formulaire form input {
-  border: none;
-  border-radius: 5px;
-  padding: 5px;
-  background: rgba(148, 199, 199, 0.581);
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-.meal-container .meals #result {
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
-.meal-container .meals #result .card {
-  flex: 1 0 30%;
-  max-width: 250px;
-  margin: 20px;
-  border-radius: 10px;
+.flag-container .form form .form-container .flagLingth, .flag-container .form form .form-container #searchInput, .flag-container .form form .form-container .filter {
+  width: 100% !important;
+  display: flex;
+  margin: 5px 0;
+}
+.flag-container .form form .form-container .flagLingth input[type=text], .flag-container .form form .form-container #searchInput input[type=text], .flag-container .form form .form-container .filter input[type=text] {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
   box-shadow: 1px 1px 10px;
 }
-.meal-container .meals #result .card .card-header h2 {
-  color: teal;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 20px;
+.flag-container .form form .form-container .flagLingth input {
+  flex-grow: 1;
 }
-.meal-container .meals #result .card .card-header h3 {
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 20px;
+.flag-container .form form .form-container .filter {
+  justify-content: space-between;
+  align-items: center;
 }
-.meal-container .meals #result .card .card-header .card-img-top {
-  min-height: 200px;
-  max-height: 300px;
-  position: relative;
+.flag-container .form form .form-container .filter * {
+  color: #000;
+  box-shadow: 1px 1px 7px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.flag-container .form form .form-container .filter *:hover {
+  transform: scale(1.05);
+}
+.flag-container #flags {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flag-container #flags .card {
+  flex: 1 0 20%;
+  padding: 30px;
+  box-shadow: 1px 1px 10px;
+  background: #000;
+  color: white;
   border-radius: 10px;
-  overflow: hidden;
+  border: 1px solid white;
+  min-width: 250px;
+  max-width: 350px;
+  margin: 10px;
+  transition: 0.3s ease;
 }
-.meal-container .meals #result .card .card-header .card-img-top img {
-  position: absolute;
+.flag-container #flags .card:hover {
+  transform: scale(1.05);
+}
+.flag-container #flags .card .card-header {
+  margin-bottom: 10px;
+  width: 90%;
+  border-radius: 10px;
+}
+.flag-container #flags .card .card-header img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
 }
-.meal-container .meals #result .card .card-body {
-  padding: 20px;
+.flag-container #flags .card .card-boby h2 {
+  margin: 10px 0;
+  text-align: center;
+  color: teal;
+  font-weight: bold;
 }
-.meal-container .meals #result .card .card-body li {
-  line-height: 25px;
+.flag-container #flags .card .card-boby h3 {
+  margin: 10px;
 }/*# sourceMappingURL=index.css.map */

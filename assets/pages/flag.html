@@ -11,7 +11,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="../events/meals.js" defer type="module"></script>
+    <script src="../events/flag.js" defer type="module"></script>
     <script src="../events/form-inscription.js" defer></script>
 
 </head>
@@ -42,7 +42,6 @@
                             <li><a href="./photos.html">Photos </a></li>
                             <li><a href="./users.html">Users </a></li>
                             <li><a href="./flag.html">Dragpeaux </a></li>
-
                         </ul>
                     </li>
                     <li><a href="#">About</a></li>
@@ -97,23 +96,25 @@
             </ul>
         </div>
     </nav>
-    <main class="meal-container">
-        <div class="meals">
-            <div class="formulaire">
-                <form action="#">
-                    <label for="meal-name">Entrew le nom d'un aliment (en anglais ) </label>
-                    <input type="text" name="meal-name" id="meal-name" placeholder="ex: beef">
-                </form>
-            </div>
-            <ul id="result">
-                <!-- <li class="card">
-                            <div class="card-head">
-                                <h1 class="head-title"></h1>
-                                    <img src="" alt="" class="head-img">
-                                 </div>
-                            <div class="card-body">body card </div>
-                        </li> -->
-            </ul>
+    <main class="flag-container">
+          <div class="form">
+            <form action="#">
+                <div class="form-container">
+                     <div id="searchInput"><input type="text" name="country" placeholder="Search" id="nameCountry"></div>
+                     <div class="flagLingth">
+                        <input type="range" name="flagLingth" maxlength="24" max="250" id="flagLingth" >
+                        <span id="displayLingth">24</span>
+                    </div>
+                     <div class="filter">
+                          <span class="triCountry" id="triCroissant">Tri Croissant</span>
+                          <span class="triCountry" id="triDecroissant">Tri Decroissant</span>
+                          <span class="triCountry" id="triAlpha">Tri Alphabetique</span>
+                     </div>
+                </div>
+            </form>
+          </div>
+            <ul id="flags">
+             
         </div>
     </main>
 </body>

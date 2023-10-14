@@ -1,5 +1,5 @@
 const photosContainer=document.querySelector(".photos-container")
-const btnDelete=document.querySelector(".photos-container .btn-delete")
+const btnDelete=document.querySelector(".photos-container  ")
 
 let  photos=[]
 
@@ -12,10 +12,10 @@ let  photos=[]
              photos.length=30
         console.log(photos[0]);
    
-   })
+   }).then(()=>dispalyPhoto())
  }
 
- await photoFetch()
+
 
 
   function dispalyPhoto(){
@@ -38,6 +38,7 @@ let  photos=[]
         `
     }).join("")
   }
-  dispalyPhoto()
+
+  window.addEventListener("load",photoFetch)
 
   console.log(btnDelete)
